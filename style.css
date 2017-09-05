@@ -28,6 +28,7 @@ body {
 }
 .linebox h4 {
     color: #666666;
+    margin-bottom: 30px;
 }
 
 .linebox_square {
@@ -87,9 +88,9 @@ body {
 
 }
 
-.linebox_square:hover{
-    margin-bottom: 0px;
-}
+/*.linebox_square:hover{*/
+    /*margin-bottom: 0px;*/
+/*}*/
 .row{
     margin-bottom: 20px;
 }
