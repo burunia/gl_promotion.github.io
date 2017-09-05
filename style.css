@@ -2,22 +2,32 @@ body {
     font-size: 13px;
 }
 .container h2 {
-text-align: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+
 }
 .container h4{
     text-align: center;
     font-size: 1.3em;
-    margin-bottom: 40px;
     margin-top: 15px;
 }
 .container hr {
     max-width: 60%;
     margin: auto;
 }
+.container h5 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
 .linebox {
     border: solid 1px #e5e5e5;
     padding: 20px 0;
     font-size: 1em;
+}
+.linebox h4 {
+    color: #666666;
 }
 
 .linebox_square {
@@ -29,8 +39,9 @@ text-align: center;
 }
 
 .linebox_square h6 {
-    font-size: 1.3em;
+    font-size: 1.8em;
     font-weight: bold;
+    margin: 20px;
 }
 
 .linebox_square h5 {
@@ -122,4 +133,46 @@ text-align: center;
 .icon_warper{
     width: 100%;
     height: 120px;
+}
+#product-component-4ad87940112 {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}
+
+#product-component-6c8a5ea60fe {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}
+
+#product-component-52b5c547373 {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}
+/* one time payment button */
+
+#product-component-07ef015ae5b {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}
+#product-component-2a3abec0305 {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}
+#product-component-003f8698194 {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}
+.box_spac{
+    margin: 0 auto;
+    height: 90px;
+    text-align: center;
+    position: relative
+}
+.box_spac p{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
