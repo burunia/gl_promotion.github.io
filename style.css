@@ -1,16 +1,16 @@
 body {
     font-size: 13px;
 }
+
 .container h2 {
     text-align: center;
     font-size: 3em;
     font-weight: bold;
-
 }
 .container h4{
     text-align: center;
     font-size: 1.3em;
-    margin-top: 15px;
+    margin-top: 3%;
 }
 .container hr {
     max-width: 60%;
@@ -18,8 +18,9 @@ body {
 }
 .container h5 {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 2%;
     margin-bottom: 40px;
+    font-size: 1em;
 }
 .linebox {
     border: solid 1px #e5e5e5;
@@ -36,7 +37,7 @@ body {
     border: solid 1px #e5e5e5;
     padding: 20px 30px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 5%;
 }
 
 .linebox_square h6 {
@@ -122,6 +123,7 @@ body {
     width: 142px;
 }
 .shopify-buy__btn{
+    display: none;
     width: 165px;
     height: 55px;
     background-color: #0088ff;
@@ -136,6 +138,20 @@ body {
     width: 100%;
     height: 120px;
 }
+.box_spac{
+    margin: 0 auto;
+    height: 90px;
+    text-align: center;
+    position: relative
+}
+.box_spac p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+/*Subscription buttons*/
 #product-component-4ad87940112 {
     max-width: 100% !important;
     margin-bottom: 20px;
@@ -163,20 +179,6 @@ body {
 #product-component-003f8698194 {
     max-width: 100% !important;
     margin-bottom: 20px;
-}
-.box_spac{
-    margin: 0 auto;
-    height: 90px;
-    text-align: center;
-    position: relative
-}
-.box_spac p{
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
 }
 /*Animation*/
 
@@ -220,4 +222,45 @@ body {
     -webkit-transform: scale(1.25, 1.25);
     transform: scale(1.25, 1.25);
     transition: 0.6s;
+}
+/* For mobile phones: */
+
+@media (max-device-width : 768px) {
+    .container {
+        width: 100%;
+        padding: 60px;
+    }
+    .container h2{
+        font-size: 5em;
+    }
+    .container h4{
+        font-size: 3.3em;
+    }
+    .container h5{
+        font-size: 2.5em;
+    }
+    .linebox_square{
+        padding: 100px;
+    }
+
+    .linebox_square p {
+    font-size: 2.5em;
+    }
+    .onetime_icon{
+        transform: scale(1.5, 1.5)
+    }
+    .linebox_square h6 {
+        font-size: 5em;
+        margin-bottom: 40px;
+    }
+    .linebox_square h5 {
+        font-size: 7em;
+        margin-top: 30px;
+    }
+    .box_spac{
+        position: relative;
+        display: block;
+        min-height: 200px;
+    }
+   }
 }
