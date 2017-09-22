@@ -1,21 +1,80 @@
+/*.container{*/
+    /*margin: 0 auto;*/
+    /*max-width: 1024px;*/
+/*}*/
+
+* { box-sizing: border-box; }
+
+[class *= "col-"] {
+    width: 100%;
+    padding: 15px;
+    float: left;
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+@media only screen and (max-width: 375px) {
+    /* For desktop: */
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+}
 body {
     font-size: 13px;
 }
 
-.container h2 {
+
+h2 {
     text-align: center;
-    font-size: 3em;
-    font-weight: bold;
+    margin-top: 20px;
+
 }
-.container h4{
+h4{
     text-align: center;
     font-size: 1.3em;
 }
-.container hr {
+hr {
     max-width: 60%;
     margin: auto;
 }
-.container h5 {
+h5 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 1em;
@@ -30,11 +89,12 @@ body {
 }
 
 .linebox_square {
-    position: relative;
+    display: flex;
     border: solid 1px #e5e5e5;
     padding: 20px 30px;
     text-align: center;
     margin-bottom: 5%;
+    flex-direction: column;
 }
 
 .linebox_square h6 {
@@ -44,9 +104,9 @@ body {
 }
 
 .linebox_square h5 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .onetime_icon {
@@ -63,7 +123,7 @@ body {
 
 #product-component-3787ec1f29f {
     max-width: 100% !important;
-    margin-bottom: 20px;
+    margin-bottom: 20px 0;
 
 }
 
@@ -136,17 +196,13 @@ body {
     height: 120px;
 }
 .box_spac{
-    margin: 0 auto;
-    height: 90px;
+    margin: auto !important;
+    min-height: 156px;
     text-align: center;
-    position: relative
+    display: flex;
 }
 .box_spac p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    margin: auto !important;
 }
 /*Subscription buttons*/
 #product-component-4ad87940112 {
@@ -222,42 +278,42 @@ body {
 }
 /* For mobile phones: */
 
-@media (max-device-width : 768px) {
-    .container {
-        width: 100%;
-        padding: 60px;
-    }
-    .container h2{
-        font-size: 5em;
-    }
-    .container h4{
-        font-size: 3.3em;
-    }
-    .container h5{
-        font-size: 2.5em;
-    }
-    .linebox_square{
-        padding: 100px;
-    }
+/*@media (max-device-width : 768px) {*/
+    /*.container {*/
+        /*width: 100%;*/
+        /*padding: 60px;*/
+    /*}*/
+    /*.container h2{*/
+        /*font-size: 5em;*/
+    /*}*/
+    /*.container h4{*/
+        /*font-size: 3.3em;*/
+    /*}*/
+    /*.container h5{*/
+        /*font-size: 2.5em;*/
+    /*}*/
+    /*.linebox_square{*/
+        /*padding: 100px;*/
+    /*}*/
 
-    .linebox_square p {
-    font-size: 2.7em;
-    }
-    .onetime_icon{
-        transform: scale(1.5, 1.5)
-    }
-    .linebox_square h6 {
-        font-size: 5em;
-        margin-bottom: 40px;
-    }
-    .linebox_square h5 {
-        font-size: 7em;
-        margin-top: 30px;
-    }
-    .box_spac{
-        position: relative;
-        display: block;
-        min-height: 200px;
-    }
-   }
-}
+    /*.linebox_square p {*/
+    /*font-size: 2.7em;*/
+    /*}*/
+    /*.onetime_icon{*/
+        /*transform: scale(1.5, 1.5)*/
+    /*}*/
+    /*.linebox_square h6 {*/
+        /*font-size: 5em;*/
+        /*margin-bottom: 40px;*/
+    /*}*/
+    /*.linebox_square h5 {*/
+        /*font-size: 7em;*/
+        /*margin-top: 30px;*/
+    /*}*/
+    /*.box_spac{*/
+        /*position: relative;*/
+        /*display: block;*/
+        /*min-height: 200px;*/
+    /*}*/
+   /*}*/
+/*}*/
